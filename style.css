@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
+
+body{
+    margin: 0;
+}
+
+.container{
+    font-family: "Source Sans 3", sans-serif;
+    background-image: url('/concert.png');
+    background-size: cover;
+    background-position: center;
+    height: 120vh;
+}
+
+.header{
+    /* background: rgb(165,164,171);
+    background: linear-gradient(90deg, rgba(165,164,171,1) 0%, rgba(153,153,221,1) 48%, rgba(0,212,255,1) 100%); */
+    color: #000;
+    height: 60px;
+}
+
+.header .title{
+    padding: 0.5rem;
+    /* background: linear-gradient(90deg, rgba(165,164,171,1) 0%, rgba(153,153,221,1) 48%, rgba(0,212,255,1) 100%); */
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.header .title .main-title{
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header .title .sub-title{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 15px;
+}
+
+.header .title .sub-title span{
+    color: #3d3d40;
+    font-size: 10px;
+}
+
+.theme-switcher {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.theme-switcher label {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.theme-switcher #theme-select {
+    padding: 5px 10px;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 3px;
+    background-color: transparent;
+    /* border: 1px solid #ddd; */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.theme-switcher #theme-select:hover {
+    background-color: #727575;
+}
+
+.theme-switcher #theme-select:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px #0f4b50;
+}
+
+.editor{
+    width: calc(33.33% - 8px);
+    height: 300px;
+    float: left;
+    box-sizing: border-box;
+    position: relative;
+    flex: 1;
+    padding: 2px;
+}
+
+.editor #html{
+    border-right: 1px solid #2b2a2b;
+}
+
+.editor #css{
+    border-left: 20px solid #333;
+    border-right: 1px solid #777;
+}
+
+.editor #js{
+    border-left: 20px solid #2b2a2b;
+}
+
+/* .resizable {
+    resize: vertical;
+    overflow: auto;
+    background-color: #333;
+} */
+
+.code-box{
+    position: relative;
+    margin-top: 100px;
+    display: flex;
+    height: calc(69vh - 4.6rem);
+    /* border-top: 2px solid #000; */
+    /* border-bottom: 10px solid #020024; */
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+#download-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #333132;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#download-button:hover {
+    background-color: #474547;
+}
+
+
+/* Adding line numbers styles */
+.CodeMirror .CodeMirror-linenumber {
+    padding-right: 10px;
+    color: #888;
+}
+
+/* Adding styles for code highlighting line */
+.CodeMirror .CodeMirror-activeline-background {
+    background: rgba(128, 128, 128, 0.1);
+}
+
+/* Custom styles for Panda Syntax theme */
+.CodeMirror.cm-s-panda-syntax {
+    background-color: #2a2a2a; /* Update the background color */
+    color: #f8f8f2; /* Update the text color */
+}
+
+/* Custom styles for the line numbers in Panda Syntax theme */
+.CodeMirror.cm-s-panda-syntax .CodeMirror-linenumber {
+    color: #75715e; /* Update the line number color */
+}
+
+.preview{
+    position: relative;
+    height: calc(90vh - 30px);
+    background: #fff;
+    border-top: 5px ridge #000;
+}
+
+.preview iframe{
+    width: 100%;
+    height: 100%;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #000;
+    border-radius: 20px;
+}

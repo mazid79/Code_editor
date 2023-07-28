@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="pc chrome114 js lptgchb idc0_347" style="color-scheme: light;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/theme/panda-syntax.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/theme/material.min.css"> <!-- Add this line for Material theme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/theme/3024-day.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/addon/hint/show-hint.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Live Code Editor by Mazid</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div class="title">
+                <div class="main-title">
+                    Happy Coding!
+                </div>
+                <div class="sub-title">
+                    <span>Build by </span>Mazid
+                </div>
+            </div>
+        </div>
+
+        <div class="theme-switcher">
+            <label for="theme-select">Select Theme:</label>
+            <select id="theme-select">
+                <option value="panda">Panda Syntax</option>
+                <option value="material">Material</option>
+                <option value="3024-day">3024 Day</option>
+            </select>
+        </div>
+
+        <div class="code-box">
+            <div class="editor" id="html"></div>
+            <div class="editor" id="css"></div>
+            <div class="editor" id="js"></div>
+        </div>
+
+        <button id="download-button">Download Code</button>
+
+        <div class="preview">
+            <iframe id="live-preview"></iframe>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/htmlmixed/htmlmixed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/css/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/addon/edit/closetag.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/addon/edit/closebrackets.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/addon/hint/show-hint.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/xml/xml.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
